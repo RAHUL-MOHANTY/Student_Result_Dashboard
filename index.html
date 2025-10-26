@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Result Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎓 Student Result Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <div class="input-box">
+      <input type="text" id="name" placeholder="Enter student name" />
+      <input type="number" id="marks" placeholder="Enter marks (0–100)" />
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <table id="resultTable">
+      <tr>
+        <th>Name</th>
+        <th>Marks</th>
+        <th>Grade</th>
+      </tr>
+    </table>
+  </main>
+
+  <footer>
+    <p>RESULT DASHBOARD</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
