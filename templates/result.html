@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <a href="/logout" class="logout">Logout</a>
+    <h2>Welcome, {{ student.Name }}</h2>
+    <p><strong>Registration No:</strong> {{ student.Regd_NO }}</p>
+    
+    <table>
+      <tr><th>Subject</th><th>Marks</th></tr>
+      <tr><td>Mathematics</td><td>{{ student.Mathematics }}</td></tr>
+      <tr><td>Science</td><td>{{ student.Science }}</td></tr>
+      <tr><td>English</td><td>{{ student.English }}</td></tr>
+      <tr><td>Sanskrit</td><td>{{ student.Sanskrit }}</td></tr>
+      <tr><td>Social Science</td><td>{{ student.Social_Science }}</td></tr>
+      <tr><th>Total</th><th>{{ total }}</th></tr>
+      <tr><th>Percentage</th><th>{{ percentage }}%</th></tr>
+      <tr><th>Status</th><th>{{ status }}%</th></tr>
+    </table>
+  </div>
+</body>
+</html>
