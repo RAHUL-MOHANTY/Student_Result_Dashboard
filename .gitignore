@@ -21,6 +21,6 @@ build/
 *.sqlite
 
 # Security/Credentials (CRITICAL: Do not commit secrets)
-# Your app.py contains the password 'Rahul@2005' and the secret_key. 
+# Your app.py contains the password '*********' and the secret_key. 
 # It is best practice to ignore the file that holds hardcoded credentials.
 app.py
